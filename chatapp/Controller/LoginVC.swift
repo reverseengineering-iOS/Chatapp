@@ -15,11 +15,11 @@ class LoginVC: UIViewController {
 
         // Do any additional setup after loading the view.
     }
-
-    
-    
-    @IBAction func closeButtonPressed () {
+    @IBAction func closeButtonPressed() {
         dismiss(animated: true, completion: nil)
-        
     }
+    @IBAction func createAccountButtonPressed() {
+        performSegue(withIdentifier: TO_CREATE_ACCOUNT, sender: nil)
+    }
+    
 }
